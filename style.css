@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dank mono;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.stopwatch{
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 20px 24px;
+    border-radius: 10px;
+    filter: drop-shadow(1px 2px 10px rgba(138, 136, 136, 0.9));
+}
+
+.timerDisplay{
+    padding-top: 19px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 10px 10px 20px black;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: var(--clr);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 21px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 1s ease-in-out;
+    animation: box 2s ease-in 1s alternate infinite;;
+}
+
+.btn1:hover{
+    font-size: 22px;
+    background-color: rgb(209, 3, 3);
+    text-shadow: 2px 2px 10px black;
+}
+.btn2:hover{
+    font-size: 22px;
+    background-color:green;
+    text-shadow: 2px 2px 10px black;
+}
+.btn3:hover{
+    font-size: 22px;
+    background-color: blue;
+    text-shadow: 2px 2px 10px black;
+}
+
+@keyframes box {
+    100% {
+        box-shadow: 1px 1px 10px rgb(186, 184, 184);
+    }
+}
